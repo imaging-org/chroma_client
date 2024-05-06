@@ -12,7 +12,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY ./requirements.txt /app/requirements.txt
 RUN pip install -Ur requirements.txt
 
-FROM python:3.12.3-alpine3.19 as runner
+FROM python:3.11.5-alpine3.18 as runner
 WORKDIR /app/
 COPY --from=compiler /opt/venv /opt/venv
 
