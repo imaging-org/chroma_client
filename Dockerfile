@@ -1,4 +1,4 @@
-FROM 3.11.5-alpine3.18 as compiler
+FROM python:3.11.5-alpine3.18 as compiler
 ENV PYTHONUNBUFFERED 1
 
 RUN apk update
